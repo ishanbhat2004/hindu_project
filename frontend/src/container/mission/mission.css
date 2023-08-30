@@ -1,0 +1,127 @@
+.temple__mission {
+  display: flex;
+  flex-direction: column;
+
+  padding: 2rem;
+  background: var(--color-footer);
+
+  background: radial-gradient(
+    circle at 30% -100%,
+    #042c54 25%,
+    rgba(4, 44, 84, 1) 85%,
+    rgba(27, 120, 222, 1) 100%
+  );
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.temple__mission-feature {
+  display: flex;
+}
+
+.temple__mission-feature .temple__features-container__feature {
+  margin: 0;
+}
+
+.temple__mission-feature .temple__features-container_feature-text {
+  max-width: 700px;
+}
+
+.temple__mission-heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4rem 0 2rem;
+}
+
+.temple__mission-heading h1 {
+  font-size: 34px;
+  line-height: 45px;
+  font-weight: 800;
+  font-family: var(--font-family);
+  max-width: 510px;
+  padding-right: 3rem;
+}
+
+.temple__mission-heading p {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  color: #ff8a71;
+  cursor: pointer;
+}
+
+.temple__mission-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 2rem;
+}
+
+.temple__mission-container .temple__features-container__feature {
+  flex: 1;
+  margin: 1rem;
+  min-width: 210px;
+  display: flex;
+  flex-direction: column;
+}
+
+.temple__mission-container .temple__features-container_feature-text {
+  margin-top: 0.5rem;
+}
+
+@media screen and (max-width: 850px) {
+  .temple__mission-heading {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 0rem;
+  }
+
+  .temple__mission-heading p {
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .temple__mission-heading h1 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  .temple__mission-container .temple__features-container__feature {
+    /* Remove flex: 1; and set flex-basis to auto */
+    flex: 0 0 auto;
+    margin: 1rem 0;
+    min-width: 100%; /* Set minimum width to the full container width */
+  }
+
+  .temple__features-container__feature {
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the start of the column */
+    max-width: 100%; /* Set maximum width to the full container width */
+  }
+
+  .temple__features-container__feature-title {
+    margin-right: 0; /* Remove right margin in mobile layout */
+    margin-bottom: 1rem; /* Add some space between title and text in mobile layout */
+    max-width: 100%; /* Set maximum width to the full container width */
+  }
+
+  .temple__features-container__feature-title h1 {
+    font-size: 20px; /* Adjust font size for the title in mobile layout */
+    line-height: 30px;
+  }
+
+  .temple__features-container_feature-text {
+    /* Remove flex property, and set max-width to 100% */
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 350px) {
+  /* Customizing feature component as per needs */
+  .temple__mission-container .temple__features-container__feature {
+    margin: 1rem 0;
+    min-width: 100%;
+  }
+}

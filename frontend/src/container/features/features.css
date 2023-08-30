@@ -1,0 +1,66 @@
+.temple__community {
+  width: calc(100%);
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.temple__community-rightArrow {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  right: 32px;
+  font-size: 45px;
+  color: #fff;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.temple__community-leftArrow {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: 32px;
+  font-size: 45px;
+  color: #fff;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.temple__community-slider {
+  width: calc(100%);
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.slide-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.04rem;
+  color: var(--color-text);
+}
+
+.temple__community-slider_container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.temple__community-slider_container-child {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+@media screen and (max-width: 350px) {
+}
